@@ -4,12 +4,13 @@ buat database di mysql: db_hariwicaksono_tes_online_ptsms
 pastikan sudah ada node.js dan composer
 
 buka terminal lalu jalankan 
-composer install atau composer update
+composer update atau composer install
 lalu
 npm install
 
 jalankan perintah
 php artisan migrate
+atau import file sql: db_hariwicaksono_tes_online_ptsms.sql
 
 jalankan perintah
 composer run dev
