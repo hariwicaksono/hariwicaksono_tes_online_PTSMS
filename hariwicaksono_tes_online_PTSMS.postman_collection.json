@@ -3,7 +3,8 @@
 		"_postman_id": "26ecc22e-b3b2-4a02-aa15-7472369af114",
 		"name": "hariwicaksono_tes_online_PTSMS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "13838953"
+		"_exporter_id": "13838953",
+		"_collection_link": "https://universal-meadow-984737.postman.co/workspace/New-Team-Workspace~55255de6-6083-4e09-a133-65ed19ad7284/collection/13838953-26ecc22e-b3b2-4a02-aa15-7472369af114?action=share&source=collection_link&creator=13838953"
 	},
 	"item": [
 		{
@@ -210,6 +211,40 @@
 								"product",
 								"delete",
 								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "purchase",
+			"item": [
+				{
+					"name": "purchases",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc1MDMwMTU5LCJleHAiOjE3NzUxMTY1NTksIm5iZiI6MTc3NTAzMDE1OSwianRpIjoiSTZIVHJkYlFjWDB3VUxtVSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ReV1WfO_reQkFgDrpC7hJgLKKZqMwpJT-GLu-uQZ8ic",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/purchases",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"purchases"
 							]
 						}
 					},
