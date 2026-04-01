@@ -1,19 +1,22 @@
 copy file .env.example menjadi .env
 
-jalankan 
+buat database di mysql: db_hariwicaksono_tes_online_ptsms
+pastikan sudah ada node.js dan composer
+
+buka terminal lalu jalankan 
 composer install atau composer update
 lalu
 npm install
 
-jalankan
+jalankan perintah
 php artisan migrate
 
-jalankan 
+jalankan perintah
 composer run dev
 
 atau 
 
-jalankan buka dua terminal
+jalankan dengan buka dua terminal
 terminal 1
 php artisan serve
 
