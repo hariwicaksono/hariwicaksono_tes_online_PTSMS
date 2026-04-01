@@ -42,6 +42,7 @@ class RolePermissionSeeder extends Seeder
                 'page.view','page.create','page.update','page.delete',
                 'menu.view','menu.create','menu.update','menu.delete',
                 'product.view','product.create','product.update','product.delete',
+                'purchase.view','purchase.create','purchase.update','purchase.delete',
             ];
 
             $permissionIds = [];

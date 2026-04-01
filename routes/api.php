@@ -118,4 +118,11 @@ Route::middleware('auth:api')->group(function () {
     Route::get('/product/{id}', [\App\Http\Controllers\Api\ProductController::class, 'show'])->middleware('permission:product.view');
     Route::put('/product/update/{id}', [\App\Http\Controllers\Api\ProductController::class, 'update'])->middleware('permission:product.update');
     Route::delete('/product/delete/{id}', [\App\Http\Controllers\Api\ProductController::class, 'destroy'])->middleware('permission:product.delete');
+
+    // Purchase Management
+    Route::get('/purchases', [\App\Http\Controllers\Api\PurchaseController::class, 'index'])->middleware('permission:purchase.view');
+    Route::post('/purchase/create', [\App\Http\Controllers\Api\PurchaseController::class, 'store'])->middleware('permission:purchase.create');
+    Route::get('/purchases/{id}', [\App\Http\Controllers\Api\PurchaseController::class, 'show'])->middleware('permission:purchase.view');
+    Route::put('/purchase/update/{id}', [\App\Http\Controllers\Api\PurchaseController::class, 'update'])->middleware('permission:purchase.update');
+    Route::delete('/purchase/delete/{id}', [\App\Http\Controllers\Api\PurchaseController::class, 'destroy'])->middleware('permission:purchase.delete');
 });

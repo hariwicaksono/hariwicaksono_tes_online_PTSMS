@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version 5.7.36)
-# Date: 2026-04-01 15:09:06
+# Date: 2026-04-01 16:56:36
 # Generator: MySQL-Front 6.1  (Build 1.26)
 
 
@@ -69,7 +69,7 @@ CREATE TABLE `menus` (
 # Data for table "menus"
 #
 
-INSERT INTO `menus` VALUES (1,'dashboard','mdi-view-dashboard','/dashboard',NULL,NULL,0,1,1,NULL,'2025-07-29 10:12:57'),(2,'Pages','mdi-file-document-edit','/pages','page.view',7,1,1,1,NULL,'2025-07-29 10:12:57'),(3,'Users','mdi-account-multiple',NULL,'user.view',NULL,2,1,1,NULL,'2025-07-29 10:12:57'),(4,'users','mdi-account','/users','user.view',3,0,1,1,NULL,'2025-07-29 10:12:57'),(5,'Roles','mdi-account-check','/roles','role.view',3,1,1,1,NULL,'2025-07-29 10:12:57'),(6,'Permissions','mdi-account-details','/permissions','permission.view',3,2,1,1,NULL,'2025-07-29 10:12:57'),(7,'system','mdi-cog-box',NULL,'setting.view',NULL,3,1,1,NULL,'2025-07-29 10:12:57'),(8,'settings','mdi-cog','/settings','setting.update',7,0,1,1,NULL,'2025-07-29 10:12:57'),(9,'Menu','mdi-format-list-bulleted-square','/menus','menu.view',7,1,1,1,NULL,'2025-07-29 10:12:57'),(10,'log_activity','mdi-database-eye','/logs','log.view',7,2,1,1,NULL,'2025-07-29 10:12:57'),(11,'Backup DB','mdi-database','/backups','backup.view',7,3,1,1,NULL,'2025-07-29 10:12:57'),(12,'Product','mdi-package-variant-closed','/product','product.view',NULL,0,1,0,'2025-12-21 20:25:01','2025-12-21 20:25:01');
+INSERT INTO `menus` VALUES (1,'dashboard','mdi-view-dashboard','/dashboard',NULL,NULL,0,1,1,NULL,'2026-04-01 16:40:57'),(2,'Pages','mdi-file-document-edit','/pages','page.view',7,1,1,1,NULL,'2026-04-01 16:40:57'),(3,'Users','mdi-account-multiple',NULL,'user.view',NULL,3,1,1,NULL,'2026-04-01 16:40:57'),(4,'users','mdi-account','/users','user.view',3,0,1,1,NULL,'2026-04-01 16:40:57'),(5,'Roles','mdi-account-check','/roles','role.view',3,1,1,1,NULL,'2026-04-01 16:40:57'),(6,'Permissions','mdi-account-details','/permissions','permission.view',3,2,1,1,NULL,'2026-04-01 16:40:57'),(7,'system','mdi-cog-box',NULL,'setting.view',NULL,4,1,1,NULL,'2026-04-01 16:40:57'),(8,'settings','mdi-cog','/settings','setting.update',7,0,1,1,NULL,'2026-04-01 16:40:57'),(9,'Menu','mdi-format-list-bulleted-square','/menus','menu.view',7,2,1,1,NULL,'2026-04-01 16:40:57'),(10,'log_activity','mdi-database-eye','/logs','log.view',7,3,1,1,NULL,'2026-04-01 16:40:57'),(11,'Backup DB','mdi-database','/backups','backup.view',7,4,1,1,NULL,'2026-04-01 16:40:57'),(12,'Product','mdi-package-variant-closed','/product','product.view',NULL,1,1,0,'2025-12-21 20:25:01','2026-04-01 16:40:57'),(13,'Purchase','mdi-cart','/purchases','purchase.view',NULL,2,1,0,'2026-04-01 16:40:52','2026-04-01 16:49:15');
 
 #
 # Structure for table "migrations"
@@ -81,7 +81,7 @@ CREATE TABLE `migrations` (
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 #
 # Data for table "migrations"
@@ -150,7 +150,7 @@ CREATE TABLE `permissions` (
 # Data for table "permissions"
 #
 
-INSERT INTO `permissions` VALUES (1,'user.view',NULL,NULL),(2,'user.create',NULL,NULL),(3,'user.update',NULL,NULL),(4,'user.delete',NULL,NULL),(5,'setting.view',NULL,NULL),(6,'setting.update',NULL,NULL),(7,'role.view','2025-07-03 04:37:29','2025-07-03 04:37:29'),(8,'role.create','2025-07-03 04:40:45','2025-07-03 04:40:45'),(9,'role.update','2025-07-03 04:41:52','2025-07-03 04:41:52'),(10,'role.delete','2025-07-03 04:42:21','2025-07-03 04:42:21'),(11,'permission.view','2025-07-03 11:33:48','2025-07-03 11:33:48'),(12,'permission.create','2025-07-03 11:33:56','2025-07-03 11:33:56'),(13,'permission.delete','2025-07-03 11:34:04','2025-07-03 11:34:04'),(14,'log.view','2025-07-09 09:42:20','2025-07-09 09:42:20'),(15,'backup.view','2025-07-17 10:44:03','2025-07-17 10:44:03'),(16,'backup.create','2025-07-17 10:44:11','2025-07-17 10:44:11'),(17,'backup.restore','2025-07-17 10:44:33','2025-07-17 10:44:33'),(18,'backup.download','2025-07-17 10:44:42','2025-07-17 10:44:42'),(19,'backup.delete','2025-07-17 10:44:53','2025-07-17 10:44:53'),(20,'page.view','2025-07-26 20:34:31','2025-07-26 20:34:31'),(21,'page.create','2025-07-26 20:34:42','2025-07-26 20:34:42'),(22,'page.update','2025-07-26 20:34:48','2025-07-26 20:34:48'),(23,'page.delete','2025-07-26 20:34:54','2025-07-26 20:34:54'),(24,'menu.view','2025-07-28 15:06:53','2025-07-28 15:06:53'),(25,'menu.create','2025-07-28 15:07:07','2025-07-28 15:07:07'),(26,'menu.update','2025-07-28 15:07:12','2025-07-28 15:07:12'),(27,'menu.delete','2025-07-29 20:30:51','2025-07-29 20:30:51'),(28,'product.view','2025-12-21 20:19:45','2025-12-21 20:19:45'),(29,'product.create','2025-12-21 20:19:58','2025-12-21 20:19:58'),(30,'product.update','2025-12-21 20:20:05','2025-12-21 20:20:05'),(31,'product.delete','2025-12-21 20:20:14','2025-12-21 20:20:14');
+INSERT INTO `permissions` VALUES (1,'user.view',NULL,NULL),(2,'user.create',NULL,NULL),(3,'user.update',NULL,NULL),(4,'user.delete',NULL,NULL),(5,'setting.view',NULL,NULL),(6,'setting.update',NULL,NULL),(7,'role.view','2025-07-03 04:37:29','2025-07-03 04:37:29'),(8,'role.create','2025-07-03 04:40:45','2025-07-03 04:40:45'),(9,'role.update','2025-07-03 04:41:52','2025-07-03 04:41:52'),(10,'role.delete','2025-07-03 04:42:21','2025-07-03 04:42:21'),(11,'permission.view','2025-07-03 11:33:48','2025-07-03 11:33:48'),(12,'permission.create','2025-07-03 11:33:56','2025-07-03 11:33:56'),(13,'permission.delete','2025-07-03 11:34:04','2025-07-03 11:34:04'),(14,'log.view','2025-07-09 09:42:20','2025-07-09 09:42:20'),(15,'backup.view','2025-07-17 10:44:03','2025-07-17 10:44:03'),(16,'backup.create','2025-07-17 10:44:11','2025-07-17 10:44:11'),(17,'backup.restore','2025-07-17 10:44:33','2025-07-17 10:44:33'),(18,'backup.download','2025-07-17 10:44:42','2025-07-17 10:44:42'),(19,'backup.delete','2025-07-17 10:44:53','2025-07-17 10:44:53'),(20,'page.view','2025-07-26 20:34:31','2025-07-26 20:34:31'),(21,'page.create','2025-07-26 20:34:42','2025-07-26 20:34:42'),(22,'page.update','2025-07-26 20:34:48','2025-07-26 20:34:48'),(23,'page.delete','2025-07-26 20:34:54','2025-07-26 20:34:54'),(24,'menu.view','2025-07-28 15:06:53','2025-07-28 15:06:53'),(25,'menu.create','2025-07-28 15:07:07','2025-07-28 15:07:07'),(26,'menu.update','2025-07-28 15:07:12','2025-07-28 15:07:12'),(27,'menu.delete','2025-07-29 20:30:51','2025-07-29 20:30:51'),(28,'product.view','2025-12-21 20:19:45','2025-12-21 20:19:45'),(29,'product.create','2025-12-21 20:19:58','2025-12-21 20:19:58'),(30,'product.update','2025-12-21 20:20:05','2025-12-21 20:20:05'),(31,'product.delete','2025-12-21 20:20:14','2025-12-21 20:20:14'),(32,'purchase.view','2026-04-01 16:38:51','2026-04-01 16:38:51'),(33,'purchase.create','2026-04-01 16:39:02','2026-04-01 16:39:02'),(34,'purchase.update','2026-04-01 16:39:08','2026-04-01 16:39:08'),(35,'purchase.delete','2026-04-01 16:39:13','2026-04-01 16:39:13');
 
 #
 # Structure for table "personal_access_tokens"
@@ -196,6 +196,7 @@ CREATE TABLE `products` (
 # Data for table "products"
 #
 
+INSERT INTO `products` VALUES (1,'Kopi Kapal Api',10000.00,'2026-04-01 16:52:55','2026-04-01 16:52:55');
 
 #
 # Structure for table "purchases"
@@ -215,6 +216,7 @@ CREATE TABLE `purchases` (
 # Data for table "purchases"
 #
 
+INSERT INTO `purchases` VALUES (1,'2026-04-01',10000.00,'2026-04-01 16:54:04','2026-04-01 16:54:04');
 
 #
 # Structure for table "purchase_items"
@@ -240,6 +242,7 @@ CREATE TABLE `purchase_items` (
 # Data for table "purchase_items"
 #
 
+INSERT INTO `purchase_items` VALUES (1,1,1,1,10000.00,'2026-04-01 16:54:04','2026-04-01 16:54:04');
 
 #
 # Structure for table "roles"
@@ -279,7 +282,7 @@ CREATE TABLE `permission_role` (
 # Data for table "permission_role"
 #
 
-INSERT INTO `permission_role` VALUES (1,1),(16,1),(19,1),(18,1),(17,1),(15,1),(14,1),(12,1),(13,1),(11,1),(8,1),(10,1),(9,1),(7,1),(6,1),(5,1),(2,1),(4,1),(3,1),(21,1),(23,1),(22,1),(20,1),(25,1),(26,1),(24,1),(27,1),(29,1),(31,1),(30,1),(28,1);
+INSERT INTO `permission_role` VALUES (1,1),(16,1),(19,1),(18,1),(17,1),(15,1),(14,1),(12,1),(13,1),(11,1),(8,1),(10,1),(9,1),(7,1),(6,1),(5,1),(2,1),(4,1),(3,1),(21,1),(23,1),(22,1),(20,1),(25,1),(26,1),(24,1),(27,1),(29,1),(31,1),(30,1),(28,1),(33,1),(35,1),(34,1),(32,1);
 
 #
 # Structure for table "settings"
@@ -372,4 +375,4 @@ CREATE TABLE `activity_logs` (
 # Data for table "activity_logs"
 #
 
-INSERT INTO `activity_logs` VALUES (1,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:04:05','2026-04-01 14:04:05'),(2,1,'logout','Auth','Logout oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:09:32','2026-04-01 14:09:32'),(3,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','PostmanRuntime/7.36.0','2026-04-01 14:11:21','2026-04-01 14:11:21'),(4,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:14:46','2026-04-01 14:14:46'),(5,1,'logout','Auth','Logout oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:18:35','2026-04-01 14:18:35'),(6,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:18:46','2026-04-01 14:18:46'),(7,1,'logout','Auth','Logout oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:21:35','2026-04-01 14:21:35'),(8,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:21:44','2026-04-01 14:21:44'),(9,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','PostmanRuntime/7.36.0','2026-04-01 14:56:00','2026-04-01 14:56:00');
+INSERT INTO `activity_logs` VALUES (1,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:04:05','2026-04-01 14:04:05'),(2,1,'logout','Auth','Logout oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:09:32','2026-04-01 14:09:32'),(3,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','PostmanRuntime/7.36.0','2026-04-01 14:11:21','2026-04-01 14:11:21'),(4,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:14:46','2026-04-01 14:14:46'),(5,1,'logout','Auth','Logout oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:18:35','2026-04-01 14:18:35'),(6,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:18:46','2026-04-01 14:18:46'),(7,1,'logout','Auth','Logout oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:21:35','2026-04-01 14:21:35'),(8,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 14:21:44','2026-04-01 14:21:44'),(9,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','PostmanRuntime/7.36.0','2026-04-01 14:56:00','2026-04-01 14:56:00'),(10,1,'create','Permission','create Permission: purchase.view','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 16:38:51','2026-04-01 16:38:51'),(11,1,'create','Permission','create Permission: purchase.create','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 16:39:02','2026-04-01 16:39:02'),(12,1,'create','Permission','create Permission: purchase.update','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 16:39:08','2026-04-01 16:39:08'),(13,1,'create','Permission','create Permission: purchase.delete','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 16:39:13','2026-04-01 16:39:13'),(14,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 16:39:43','2026-04-01 16:39:43'),(15,1,'logout','Auth','Logout oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 16:46:25','2026-04-01 16:46:25'),(16,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 16:46:37','2026-04-01 16:46:37'),(17,1,'logout','Auth','Logout oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 16:49:31','2026-04-01 16:49:31'),(18,1,'login','Auth','Login sukses oleh Admin Demo','127.0.0.1','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36','2026-04-01 16:49:43','2026-04-01 16:49:43');
