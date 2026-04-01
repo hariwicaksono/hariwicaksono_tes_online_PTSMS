@@ -27,7 +27,9 @@ npm run dev
 buka browser
 http://localhost:8000
 
-jika menggunakan laragon buka dengan http://hariwicaksono_tes_online_ptsms.test
+jika menggunakan laragon 
+jalankan perintah: npm run build
+lalu buka dengan http://hariwicaksono_tes_online_ptsms.test
 
 login menggunakan 
 admin@test.com
