@@ -4,182 +4,169 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Carbon\Carbon;
 
 class MenuSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('menus')->insert([
-            [
-                'id' => 1,
-                'name' => 'dashboard',
-                'icon' => 'mdi-view-dashboard',
-                'url' => '/dashboard',
-                'permission' => null,
-                'parent_id' => null,
-                'order' => 0,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 2,
-                'name' => 'Pages',
-                'icon' => 'mdi-file-document-edit',
-                'url' => '/pages',
-                'permission' => 'page.view',
-                'parent_id' => 7,
-                'order' => 1,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 3,
-                'name' => 'Users',
-                'icon' => 'mdi-account-multiple',
-                'url' => null,
-                'permission' => 'user.view',
-                'parent_id' => null,
-                'order' => 2,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 4,
-                'name' => 'users',
-                'icon' => 'mdi-account',
-                'url' => '/users',
-                'permission' => 'user.view',
-                'parent_id' => 3,
-                'order' => 0,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 5,
-                'name' => 'Roles',
-                'icon' => 'mdi-account-check',
-                'url' => '/roles',
-                'permission' => 'role.view',
-                'parent_id' => 3,
-                'order' => 1,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 6,
-                'name' => 'Permissions',
-                'icon' => 'mdi-account-details',
-                'url' => '/permissions',
-                'permission' => 'permission.view',
-                'parent_id' => 3,
-                'order' => 2,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 7,
-                'name' => 'system',
-                'icon' => 'mdi-cog-box',
-                'url' => null,
-                'permission' => 'setting.view',
-                'parent_id' => null,
-                'order' => 3,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 8,
-                'name' => 'settings',
-                'icon' => 'mdi-cog',
-                'url' => '/settings',
-                'permission' => 'setting.update',
-                'parent_id' => 7,
-                'order' => 0,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 9,
-                'name' => 'Menu',
-                'icon' => 'mdi-format-list-bulleted-square',
-                'url' => '/menus',
-                'permission' => 'menu.view',
-                'parent_id' => 7,
-                'order' => 1,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 10,
-                'name' => 'log_activity',
-                'icon' => 'mdi-database-eye',
-                'url' => '/logs',
-                'permission' => 'log.view',
-                'parent_id' => 7,
-                'order' => 2,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 11,
-                'name' => 'Backup DB',
-                'icon' => 'mdi-database',
-                'url' => '/backups',
-                'permission' => 'backup.view',
-                'parent_id' => 7,
-                'order' => 3,
-                'is_active' => 1,
-                'is_system' => 1,
-                'created_at' => null,
-                'updated_at' => Carbon::parse('2025-07-29 03:12:57'),
-            ],
-            [
-                'id' => 12,
-                'name' => 'Product',
-                'icon' => 'mdi-package-variant-closed',
-                'url' => '/product',
-                'permission' => 'product.view',
-                'parent_id' => null,
-                'order' => 0,
-                'is_active' => 1,
-                'is_system' => 0,
-                'created_at' => Carbon::parse('2025-12-21 13:25:01'),
-                'updated_at' => Carbon::parse('2025-12-21 13:25:01'),
-            ],
-            [
-                'id' => 13,
-                'name' => 'Purchase',
-                'icon' => 'mdi-cart',
-                'url' => '/purchases',
-                'permission' => 'purchase.view',
-                'parent_id' => null,
-                'order' => 2,
-                'is_active' => 1,
-                'is_system' => 0,
-                'created_at' => Carbon::parse('2025-12-21 13:25:01'),
-                'updated_at' => Carbon::parse('2025-12-21 13:25:01'),
-            ],
-        ]);
+        DB::transaction(function () {
+            $dashboard = DB::table('menus')->firstOrCreate(
+                ['title' => 'Dashboard'],
+                [
+                    'icon' => 'mdi-view-dashboard',
+                    'route' => '/dashboard',
+                    'permission_key' => null,
+                    'parent_id' => null,
+                    'order' => 0,
+                    'is_active' => 1,
+                    'is_system' => 1,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+
+            $product = DB::table('menus')->firstOrCreate(
+                ['title' => 'Product'],
+                [
+                    'icon' => 'mdi-package-variant-closed',
+                    'route' => '/product',
+                    'permission_key' => 'product.view',
+                    'parent_id' => null,
+                    'order' => 1,
+                    'is_active' => 1,
+                    'is_system' => 0,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+
+            $purchase = DB::table('menus')->firstOrCreate(
+                ['title' => 'Purchase'],
+                [
+                    'icon' => 'mdi-cart',
+                    'route' => '/purchases',
+                    'permission_key' => 'purchase.view',
+                    'parent_id' => null,
+                    'order' => 2,
+                    'is_active' => 1,
+                    'is_system' => 0,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+
+            $report = DB::table('menus')->firstOrCreate(
+                ['title' => 'Report'],
+                [
+                    'icon' => 'mdi-file-table',
+                    'route' => '/report',
+                    'permission_key' => null,
+                    'parent_id' => null,
+                    'order' => 3,
+                    'is_active' => 1,
+                    'is_system' => 0,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+            $users = DB::table('menus')->firstOrCreate(
+                ['title' => 'Users'],
+                [
+                    'icon' => 'mdi-account-multiple',
+                    'route' => null,
+                    'permission_key' => 'user.view',
+                    'parent_id' => null,
+                    'order' => 4,
+                    'is_active' => 1,
+                    'is_system' => 1,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+
+            DB::table('menus')->firstOrCreate(
+                ['title' => 'User List'],
+                [
+                    'icon' => 'mdi-account',
+                    'route' => '/users',
+                    'permission_key' => 'user.view',
+                    'parent_id' => $users->id,
+                    'order' => 0,
+                    'is_active' => 1,
+                    'is_system' => 1,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+
+            DB::table('menus')->firstOrCreate(
+                ['title' => 'Roles'],
+                [
+                    'icon' => 'mdi-account-check',
+                    'route' => '/roles',
+                    'permission_key' => 'role.view',
+                    'parent_id' => $users->id,
+                    'order' => 1,
+                    'is_active' => 1,
+                    'is_system' => 1,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+
+            DB::table('menus')->firstOrCreate(
+                ['title' => 'Permissions'],
+                [
+                    'icon' => 'mdi-account-details',
+                    'route' => '/permissions',
+                    'permission_key' => 'permission.view',
+                    'parent_id' => $users->id,
+                    'order' => 2,
+                    'is_active' => 1,
+                    'is_system' => 1,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+
+            $system = DB::table('menus')->firstOrCreate(
+                ['title' => 'System'],
+                [
+                    'icon' => 'mdi-cog-box',
+                    'route' => null,
+                    'permission_key' => 'setting.view',
+                    'parent_id' => null,
+                    'order' => 5,
+                    'is_active' => 1,
+                    'is_system' => 1,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]
+            );
+
+            $systemMenus = [
+                ['Settings', 'mdi-cog', '/settings', 'setting.update', 0],
+                ['Menu', 'mdi-format-list-bulleted-square', '/menus', 'menu.view', 1],
+                ['Log Activity', 'mdi-database-eye', '/logs', 'log.view', 2],
+                ['Backup DB', 'mdi-database', '/backups', 'backup.view', 3],
+            ];
+
+            foreach ($systemMenus as $menu) {
+                DB::table('menus')->firstOrCreate(
+                    ['title' => $menu[0]],
+                    [
+                        'icon' => $menu[1],
+                        'route' => $menu[2],
+                        'permission_key' => $menu[3],
+                        'parent_id' => $system->id,
+                        'order' => $menu[4],
+                        'is_active' => 1,
+                        'is_system' => 1,
+                        'created_at' => now(),
+                        'updated_at' => now(),
+                    ]
+                );
+            }
+        });
     }
 }

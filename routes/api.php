@@ -125,4 +125,6 @@ Route::middleware('auth:api')->group(function () {
     Route::get('/purchases/{id}', [\App\Http\Controllers\Api\PurchaseController::class, 'show'])->middleware('permission:purchase.view');
     Route::put('/purchase/update/{id}', [\App\Http\Controllers\Api\PurchaseController::class, 'update'])->middleware('permission:purchase.update');
     Route::delete('/purchase/delete/{id}', [\App\Http\Controllers\Api\PurchaseController::class, 'destroy'])->middleware('permission:purchase.delete');
+
+    Route::get('/report/purchases', [\App\Http\Controllers\Api\ReportPurchaseController::class, 'index']);
 });

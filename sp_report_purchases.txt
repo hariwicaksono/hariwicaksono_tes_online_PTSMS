@@ -1,0 +1,20 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_report_purchases`(
+    IN start_date DATE,
+    IN end_date DATE,
+    IN product_id INT
+)
+BEGIN
+    SELECT 
+        p.date AS tanggal,
+        pr.name AS nama_produk,
+        COUNT(DISTINCT p.id) AS total_transaksi,
+        SUM(pi.qty) AS total_qty,
+        SUM(pi.qty * pi.price) AS total_amount
+    FROM purchases p
+    JOIN purchase_items pi ON pi.purchase_id = p.id
+    JOIN products pr ON pr.id = pi.product_id
+    WHERE p.date BETWEEN start_date AND end_date
+      AND (product_id IS NULL OR pi.product_id = product_id)
+    GROUP BY p.date, pr.id, pr.name
+    ORDER BY p.date ASC;
+END;
